@@ -38,7 +38,6 @@ mcp-tutorial/
 ## Prerequisites
 
 - Python 3.10 or newer
-- Git
 - For the Ollama client: [Ollama](https://ollama.com) installed and running locally
 - For the OpenAI-compatible client: credentials for a compatible API (see the
   Configuration section below)
@@ -89,7 +88,7 @@ Make sure Ollama is running before you start the client:
 
 ```bash
 ollama serve              # start the Ollama daemon if it is not already running
-ollama pull qwen3.5:9b    # download the model the first time
+ollama pull qwen3.5:9b    # download the model the first time. Or change the model name in the mcp_client_ollama.py script in line 18. the variable name is OLLAMA_MODEL
 ```
 
 ### OpenAI-compatible client
